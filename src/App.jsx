@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home/Home.jsx';
 import OurMenu from './pages/OurMenu/OurMenu.jsx';
-import { CartProvider } from "./context/CartContext";
+import { CartProvider } from "./Context/CartContext";
 import About from "./pages/About/AboutPage";
 import Contact from "./pages/Contact/Contact";
 import Shop from "./pages/Shop/Shop";
