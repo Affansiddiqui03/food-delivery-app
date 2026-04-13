@@ -1,0 +1,30 @@
+.menu_banner {
+  background: linear-gradient(135deg, #ff3d00, #ff9100);
+  color: white;
+}
+
+.menu_card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.menu_card:hover {
+  transform: translateY(-10px);
+}
+
+.menu_card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu_section .btn_red{
+    background: var(--light-red);
+    color: white;
+    border: none;
+}
+.menu_section .btn_red:hover{
+    background: var(--yellow);
+    color: black;
+    border: none;
+}

@@ -1,0 +1,18 @@
+.about_page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff0000, #ff9900); /* Gradient red-orange */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.about_page h1 {
+  font-size: 4rem;
+}
+
+.about_page p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
