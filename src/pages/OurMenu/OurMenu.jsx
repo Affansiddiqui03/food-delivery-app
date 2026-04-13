@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Layout from "../../components/Layout/Layout";
 import "../../styles/Menu.css";
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../Context/CartContext";
 
 // 🍔 Burgers
 import doubleBurger from "../../assets/double burger.webp";
