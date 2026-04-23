@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { BsCart3 } from 'react-icons/bs';
 import Logo from '../../assets/burger.png';
 import '../../styles/Header.css';
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "/src/Context/CartContext";
 import CartModal from "../CartModal";  // ← new import
 
 function Header() {

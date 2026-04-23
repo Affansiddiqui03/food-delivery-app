@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
 import Burger from '../../assets/burger1.png';
 import { Link } from 'react-router-dom';
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../Context/CartContext";
 
 function Section1() {
 

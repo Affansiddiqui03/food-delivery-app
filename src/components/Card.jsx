@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Col, Card as BootstrapCard } from "react-bootstrap";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../Context/CartContext";
 import { Link } from "react-router-dom";
 
 function Card({ image, rating, title, paragraph, price, renderRatingIcons }) {

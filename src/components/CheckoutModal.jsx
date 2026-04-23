@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { CartContext } from "../context/CartContext";
-
+// ✅ Correct
+import { CartContext } from "../Context/CartContext";
 const STEPS = ["Delivery", "Payment", "Review"];
 
 const inputStyle = {

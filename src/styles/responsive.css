@@ -1,0 +1,625 @@
+/* ============================================================
+   BLINK BITES — RESPONSIVE OVERRIDES
+   Drop this file in src/styles/ and import it in App.jsx
+   or index.css AFTER all other style imports.
+   ============================================================ */
+
+/* ─── GLOBAL ─── */
+/* img { max-width: 100%; height: auto; } */
+
+.order_now {
+  padding: 12px 28px;
+  font-size: 17px;
+}
+
+/* ─── 992px – 1225px : mid-range layout fix ─── */
+@media (min-width: 992px) and (max-width: 1225px) {
+
+  /* ── Hero ── */
+  .herosection { padding-top: 110px; padding-bottom: 60px; }
+  /* Burger image — shrink so it doesn't push text out */
+  .herosection .img-fluid { max-width: 85%; }
+  /* Hero text column — scale down so both cols fit */
+  .herosection .hero_text h1 { font-size: 4.5rem; letter-spacing: 1px; }
+  .herosection .hero_text h2 { font-size: 1.9rem; }
+  .herosection .hero_text p  { font-size: 14px; padding: 0 5px; }
+  /* Price badge — smaller so it doesn't overlap image */
+  .herosection .price_badge  { width: 210px; height: 174px; right: 10px; }
+  .herosection .badge-text .h4_xs { font-size: 1.4rem; }
+  .herosection .badge-text .h3_xs { font-size: 2rem; }
+
+  /* ── About / Section2 ── */
+  .aboutsection { padding-bottom: 250px; }
+  .about_box .about_icon img { height: 180px; object-fit: cover; width: 100%; }
+  .about_box p { padding: 0 10px; font-size: 14px; }
+
+  /* ── Menu / Section3 ── */
+  .menu_section .para { padding: 10px 50px; font-size: 15px; }
+  /* Card image consistent height */
+  .menu_section .card-img-top { height: 200px; }
+  /* Ads boxes */
+  .menu_section .ads_box { padding: 60px 20px 40px; }
+  .menu_section .ads_box h4 { font-size: 2rem; }
+  .menu_section .ads_box h5 { font-size: 2.2rem; }
+
+  /* ── Promotion / Section4 ── */
+  .promotion_section img.img-fluid { max-width: 100%; }
+  .promotion_section .px-5 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+  .promotion_section p { font-size: 15px; }
+  .promotion_section ul li { font-size: 15px; }
+
+  /* ── App / Section5 ── */
+  .app_section .app_mockup { max-width: 100%; }
+  .app_section .app_para   { font-size: 0.95rem; }
+  .app_section .store_badge { height: 50px; }
+
+  /* ── Testimonials / Section6 ── */
+  .testimonial_text { font-size: 0.95rem; padding: 0 20px; }
+
+  /* ── Guarantee / Section7 ── */
+  .guarantee_section .guarantee_para { font-size: 1rem; max-width: 460px; }
+
+  /* ── Contact page ── */
+  .contact_hero { padding-top: 100px; }
+  .contact_hero_title { font-size: 2.6rem; }
+  .contact_form_card  { padding: 28px 24px; }
+
+  /* ── Shop page ── */
+  .shop_card { min-height: 220px; }
+
+  /* ── General container breathing room ── */
+  .container { max-width: 100%; padding-left: 20px !important; padding-right: 20px !important; }
+}
+
+/* ─── HEADER / NAVBAR ─── */
+@media (max-width: 991px) {
+  header .navbar {
+    position: relative;
+    background-color: #860811 !important;
+  }
+  header .navbar.sticky {
+    position: sticky;
+  }
+  header .logo img {
+    max-height: 52px;
+  }
+  header .nav-link {
+    color: #fff !important;
+    padding: 0.6rem 1rem !important;
+    font-size: 1rem;
+  }
+  header .navbar-collapse {
+    background-color: #860811;
+    padding: 0 1rem 0.75rem;
+    border-radius: 0 0 8px 8px;
+  }
+  header .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}
+
+@media (max-width: 575px) {
+  header .logo img {
+    max-height: 44px;
+  }
+  header .nav-link {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.95rem;
+  }
+}
+
+/* ─── HERO SECTION (Section1) ─── */
+.herosection {
+  background-attachment: scroll;
+  /* padding-top: 100px; */
+  padding-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+  /* .herosection {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .herosection .hero_text h1 {
+    font-size: 4.5rem;
+  }
+  .herosection .hero_text h2 {
+    font-size: 2rem;
+  } */
+  .herosection .price_badge {
+    width: 200px;
+    height: 165px;
+    right: 30%;
+    transform: translateX(50%);
+    top: -14px;
+  }
+  .herosection .badge-text .h4_xs { font-size: 1.4rem; }
+  .herosection .badge-text .h3_xs { font-size: 2rem; }
+  .herosection .img-fluid {
+    max-width: 380px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .herosection {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .herosection .hero_text h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+  .herosection .hero_text h2 {
+    font-size: 1.6rem;
+  }
+  .herosection .hero_text p {
+    font-size: 14px;
+    padding: 0.5rem 0.25rem;
+  }
+  /* .herosection .price_badge {
+    width: 160px;
+    height: 132px;
+    
+  } */
+  .herosection .badge-text .h4_xs { font-size: 1.1rem; }
+  .herosection .badge-text .h3_xs { font-size: 1.6rem; }
+  .order_now {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+}
+
+/* ─── ABOUT SECTION (Section2) ─── */
+@media (max-width: 991px) {
+  .aboutsection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .aboutsection h2 { font-size: 2.4rem; }
+  .aboutsection p  { padding: 12px 0; font-size: 16px; }
+  .about_wrapper   { padding-top: 50px; padding-bottom: 20px; }
+  .about_box .about_icon img { max-width: 100%; height: 200px; object-fit: cover; }
+}
+
+@media (max-width: 575px) {
+  .aboutsection h2 { font-size: 1.9rem; }
+  .aboutsection p  { font-size: 14px; }
+  .about_box h4    { font-size: 19px; }
+  .about_box p     { padding: 0; font-size: 14px; }
+  .about_box .about_icon img { height: 180px; }
+}
+
+/* ─── MENU SECTION (Section3 & OurMenu) ─── */
+@media (max-width: 991px) {
+  .menu_section { padding-top: 70px; padding-bottom: 70px; }
+  .menu_section h2 { font-size: 2.6rem; }
+  .menu_section .para { padding: 10px 20px; font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+  .menu_section .ads_box {
+    padding: 60px 25px 40px;
+    text-align: center;
+  }
+  .menu_section .ads_box h4 { font-size: 1.9rem; }
+  .menu_section .ads_box h5 { font-size: 2rem; }
+}
+
+@media (max-width: 575px) {
+  .menu_section { padding-top: 50px; padding-bottom: 50px; }
+  .menu_section h2 { font-size: 2rem; }
+  .menu_section .para { padding: 8px 0; font-size: 14px; }
+  .menu_section .card-img-top { height: 190px; }
+  .menu_section .ads_box h4 { font-size: 1.5rem; }
+  .menu_section .ads_box h5 { font-size: 1.65rem; }
+}
+
+/* OurMenu page filter buttons */
+@media (max-width: 575px) {
+  .menu_section .d-inline-flex.gap-2 {
+    gap: 6px !important;
+  }
+  .menu_section .rounded-pill.px-4 {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    font-size: 13px;
+  }
+}
+
+/* ─── PROMOTION SECTION (Section4) ─── */
+@media (max-width: 991px) {
+  .promotion_section { padding-top: 50px; padding-bottom: 50px; }
+  .promotion_section h2 { font-size: 2.2rem; }
+  .promotion_section p  { font-size: 1rem; }
+  .promotion_section .px-5 { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
+@media (max-width: 575px) {
+  .promotion_section h2 { font-size: 1.7rem; }
+  .promotion_section p  { font-size: 0.95rem; }
+  .promotion_section ul { padding-left: 18px; }
+  .promotion_section ul li { font-size: 14px; margin-bottom: 6px; }
+}
+
+/* Parallax bg — disable on mobile */
+.bg_parallax_scroll {
+  background-attachment: scroll;
+}
+@media (min-width: 768px) {
+  .bg_parallax_scroll { background-attachment: fixed; }
+}
+
+/* ─── APP DOWNLOAD + BRANDS (Section5) ─── */
+@media (max-width: 991px) {
+  .app_section { padding-top: 60px; padding-bottom: 60px; }
+  .app_section .app_title   { font-size: 2.4rem; }
+  .app_section .app_subtitle{ font-size: 1.6rem; }
+  .app_section .app_para    { font-size: 1rem; }
+  .app_section .store_badge { height: 48px; }
+  .app_section .app_mockup  { max-width: 480px; }
+}
+
+@media (max-width: 575px) {
+  .app_section { padding-top: 45px; padding-bottom: 45px; }
+  .app_section .app_title    { font-size: 1.9rem; }
+  .app_section .app_subtitle { font-size: 1.3rem; }
+  .app_section .app_para     { font-size: 0.9rem; margin-bottom: 20px; }
+  .app_section .store_badge  { height: 42px; }
+  .app_section .app_buttons  { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .app_section .store_badge.me-3 { margin-right: 0 !important; }
+}
+
+/* Brand logos */
+.brandimg {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .brandimg { width: 68px; }
+  .brand_section .brand_heading { font-size: 1.7rem; }
+  .brand_section .d-flex.gap-4  { gap: 16px !important; }
+}
+
+/* ─── TESTIMONIALS (Section6) ─── */
+
+/* FIX: Remove carousel indicator dots (pagination boxes) at all sizes */
+.testimonial_section .carousel-indicators {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .testimonial_section { padding-top: 70px; padding-bottom: 70px; }
+  .testimonial_section h2 { font-size: 2rem; }
+  .testimonial_text { font-size: 0.95rem; }
+}
+
+@media (max-width: 575px) {
+  .testimonial_section { padding-top: 50px; padding-bottom: 50px; }
+  .testimonial_section h2 { font-size: 1.7rem; }
+  .testimonial_text    { font-size: 0.88rem; line-height: 1.7; padding: 0 8px; }
+  .testimonial_img_wrapper { width: 74px; height: 74px; }
+  .testimonial_name { font-size: 0.9rem; }
+  .testimonial_rating i { font-size: 15px; }
+  .testimonial_card { padding: 20px 10px 40px; }
+}
+
+/* ─── GUARANTEE SECTION (Section7) ─── */
+@media (max-width: 991px) {
+  .guarantee_section { padding-top: 70px; padding-bottom: 70px; }
+  .guarantee_section .guarantee_title    { font-size: 2.6rem; }
+  .guarantee_section .guarantee_subtitle { font-size: 1.6rem; }
+  .guarantee_section .guarantee_para     { font-size: 1rem; }
+}
+
+@media (max-width: 575px) {
+  .guarantee_section { padding-top: 50px; padding-bottom: 50px; }
+  .guarantee_section .guarantee_title    { font-size: 2rem; }
+  .guarantee_section .guarantee_subtitle { font-size: 1.3rem; letter-spacing: 2px; }
+  .guarantee_section .guarantee_para     { font-size: 0.9rem; padding: 0 10px; }
+  .guarantee_section .guarantee_btn { padding: 12px 28px !important; font-size: 0.9rem; }
+}
+
+/* ─── CONTACT PAGE ─── */
+.contact_hero { padding-top: 100px; padding-bottom: 60px; }
+.contact_hero_title { font-size: 3.2rem; }
+.contact_hero_sub   { font-size: 1.1rem; }
+
+@media (max-width: 991px) {
+  .contact_hero { padding-top: 80px; padding-bottom: 50px; }
+  .contact_hero_title { font-size: 2.4rem; }
+  .contact_stat_bar   { flex-wrap: wrap; gap: 16px; padding: 18px 20px; }
+  .cstat_divider      { display: none; }
+  .cinfo_card         { padding: 20px 16px; }
+  .contact_main_section { padding: 40px 0; }
+}
+
+@media (max-width: 767px) {
+  .contact_hero_title { font-size: 2rem; }
+  .contact_form_card  { padding: 24px 20px; }
+  .map_card           { min-height: 200px; }
+}
+
+@media (max-width: 575px) {
+  .contact_hero { padding-top: 70px; padding-bottom: 40px; }
+  .contact_hero_badge  { font-size: 12px; padding: 4px 14px; }
+  .contact_hero_title  { font-size: 1.7rem; line-height: 1.25; }
+  .contact_hero_sub    { font-size: 0.9rem; }
+  .cstat_num  { font-size: 1.4rem; }
+  .cstat_lbl  { font-size: 11px; }
+  .cinfo_icon_wrap { width: 44px; height: 44px; font-size: 18px; }
+  .cinfo_title { font-size: 0.9rem; }
+  .cinfo_text  { font-size: 13px; }
+  .contact_bottom_strip .strip_title { font-size: 1.3rem; }
+  .strip_call_btn { font-size: 0.85rem; padding: 10px 20px; }
+  .social_grid { grid-template-columns: 1fr 1fr; }
+  .subject_pills { flex-wrap: wrap; gap: 6px; }
+  .subject_pill { font-size: 12px; padding: 5px 12px; }
+  .form_group label  { font-size: 13px; }
+  .form_group input,
+  .form_group textarea { font-size: 14px; }
+  .btn_submit { font-size: 14px; padding: 12px; }
+}
+
+/* ─── SHOP PAGE ─── */
+.shop_banner { 
+  background: #860811;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .shop_banner { padding-top: 80px; }
+  .shop_banner h1 { font-size: 2.4rem; }
+}
+
+@media (max-width: 575px) {
+  .shop_banner { padding-top: 70px; padding-bottom: 30px; }
+  .shop_banner h1 { font-size: 1.9rem; }
+  .shop_banner p  { font-size: 14px; }
+  .shop_card .card-title { font-size: 1.2rem; }
+}
+
+/* ─── ABOUT PAGE ─── */
+.about_page {
+  min-height: 60vh;
+  padding: 80px 0 60px;
+}
+
+@media (max-width: 991px) {
+  .about_page { padding: 70px 0 50px; }
+  .about_page h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 575px) {
+  .about_page { padding: 60px 0 40px; }
+  .about_page h1 { font-size: 1.8rem; }
+  .about_page p  { font-size: 14px; }
+}
+
+/* ─── FOOTER ─── */
+@media (max-width: 767px) {
+  footer .row > div { text-align: center; }
+  footer .col-md-3 h5 { font-size: 0.9rem; }
+  footer .col-md-3 p  { font-size: 13px; }
+  footer .btn.btn-outline-danger { margin: 3px; }
+}
+
+@media (max-width: 575px) {
+  footer { padding-top: 36px !important; padding-bottom: 28px !important; }
+  footer .col-md-3 h5 { margin-bottom: 10px !important; }
+  footer .col-md-3 p  { margin-bottom: 4px; }
+}
+
+/* Scroll-to-top button */
+.scroll {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  text-align: center;
+  background: #860811;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: background 0.2s;
+}
+.scroll:hover { background: #a00015; }
+
+@media (max-width: 575px) {
+  .scroll { bottom: 16px; right: 14px; width: 38px; height: 38px; line-height: 38px; font-size: 16px; }
+}
+
+/* ─── CART MODAL ─── */
+@media (max-width: 575px) {
+  .cart-modal,
+  [class*="cartModal"],
+  [class*="cart_modal"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    right: 0 !important;
+    border-radius: 12px 12px 0 0;
+    bottom: 0;
+    top: auto;
+  }
+}
+
+/* ─── UTILITY: touch-friendly tap targets ─── */
+@media (max-width: 767px) {
+  button,
+  a.btn,
+  .nav-link,
+  .order_now,
+  .btn_red {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p a, footer a { min-height: unset; display: inline; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   FIX: 491px and below — the gap where the whole site
+   was breaking. Adds targeted overrides for this range.
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 491px) {
+
+  /* Prevent any element causing horizontal scroll */
+  html, body { overflow-x: hidden; }
+  *, *::before, *::after { box-sizing: border-box; }
+  img { max-width: 100%; height: auto; }
+
+  /* Container */
+  .container { padding-left: 14px !important; padding-right: 14px !important; }
+
+  /* Hero */
+  .herosection { padding-top: 65px; padding-bottom: 32px; text-align: center; }
+  .herosection .hero_text h1 { font-size: 2.8rem; letter-spacing: 0.5px; }
+  .herosection .hero_text h2 { font-size: 1.4rem; }
+  .herosection .hero_text p  { font-size: 13px; padding: 0.3rem 0.15rem; }
+  .herosection .img-fluid    { max-width: 260px; margin: 0 auto; }
+  .herosection .price_badge  { width: 140px; height: 116px; left: 70%; right: auto; transform: translateX(-50%); top: -20px; }
+  .herosection .badge-text .h4_xs { font-size: 0.95rem; }
+  .herosection .badge-text .h3_xs { font-size: 1.4rem; }
+  .order_now { padding: 9px 20px; font-size: 14px; }
+
+  /* About */
+  .aboutsection h2 { font-size: 1.75rem; }
+  .aboutsection p  { font-size: 13px; }
+  .about_box h4    { font-size: 17px; }
+  .about_box p     { font-size: 13px; }
+  .about_box .about_icon img { height: 165px; }
+
+  /* Menu */
+  .menu_section h2            { font-size: 1.8rem; }
+  .menu_section .para         { font-size: 13px; }
+  .menu_section .card-img-top { height: 175px; }
+  .menu_section .ads_box h4   { font-size: 1.35rem; }
+  .menu_section .ads_box h5   { font-size: 1.5rem; }
+
+  /* OurMenu filter buttons — prevent overflow */
+  .menu_section .d-inline-flex { flex-wrap: wrap !important; justify-content: center; gap: 5px !important; }
+  .menu_section .rounded-pill.px-4 { padding-left: 10px !important; padding-right: 10px !important; font-size: 12px; }
+
+  /* ─── OURMENU FILTER BUTTONS — RESPONSIVE ─── */
+
+/* Wrapper: full width on small screens */
+.filter_wrapper {
+  padding: 0 12px;
+}
+
+/* Inner pill container: wrap on small screens */
+.filter_wrapper .d-inline-flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px !important;
+  padding: 10px 12px !important;
+  width: 100%;
+  border-radius: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .filter_wrapper .d-inline-flex {
+    gap: 6px !important;
+    padding: 8px 10px !important;
+  }
+
+  .filter_wrapper .rounded-pill {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    font-size: 14px;
+    flex: 1 1 auto;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 575px) {
+  .filter_wrapper .rounded-pill {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    font-size: 13px;
+    min-height: 38px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .filter_wrapper .d-inline-flex {
+    gap: 5px !important;
+    padding: 6px 8px !important;
+  }
+
+  .filter_wrapper .rounded-pill {
+    font-size: 12px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    flex: 1 1 45%;
+  }
+}
+  /* Promotion */
+  .promotion_section h2 { font-size: 1.55rem; }
+  .promotion_section p  { font-size: 13px; }
+  .promotion_section ul li { font-size: 13px; }
+  .promotion_section .px-5 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+
+  /* App section */
+  .app_section .app_title    { font-size: 1.7rem; }
+  .app_section .app_subtitle { font-size: 1.15rem; }
+  .app_section .app_para     { font-size: 0.85rem; }
+  .app_section .store_badge  { height: 38px; }
+  .app_section .app_mockup   { max-width: 100%; }
+
+  /* Brand logos */
+  .brandimg { width: 58px; }
+
+  /* Testimonials */
+  .testimonial_section h2      { font-size: 1.55rem; }
+  .testimonial_text            { font-size: 0.84rem; padding: 0 4px; }
+  .testimonial_img_wrapper     { width: 66px; height: 66px; }
+  .testimonial_card            { padding: 14px 6px 32px; }
+
+  /* Guarantee */
+  .guarantee_section .guarantee_title    { font-size: 1.8rem; }
+  .guarantee_section .guarantee_subtitle { font-size: 1.1rem; letter-spacing: 1px; }
+  .guarantee_section .guarantee_para     { font-size: 0.85rem; }
+  .guarantee_section .guarantee_btn      { width: 100%; text-align: center; padding: 11px 16px !important; font-size: 0.85rem; }
+
+  /* Contact */
+  .contact_hero_title  { font-size: 1.55rem; }
+  .contact_hero_sub    { font-size: 0.85rem; }
+  .cinfo_card          { padding: 16px 12px; }
+  .social_grid         { grid-template-columns: 1fr 1fr; }
+  .subject_pills       { flex-wrap: wrap; gap: 5px; }
+  .form_group input,
+  .form_group textarea { font-size: 14px; }
+
+  /* Shop */
+  .shop_banner h1 { font-size: 1.75rem; }
+
+  /* About page */
+  .about_page h1 { font-size: 1.65rem; }
+  .about_page p  { font-size: 13px; }
+
+  /* Footer */
+  footer .col-md-3 h5 { font-size: 0.85rem; }
+  footer .col-md-3 p  { font-size: 12.5px; }
+}
+
+
+
+/* ─── MISC FIXES ─── */
+@media (max-width: 400px) {
+  .container { padding-left: 14px; padding-right: 14px; }
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 1.5rem !important; }
+}
