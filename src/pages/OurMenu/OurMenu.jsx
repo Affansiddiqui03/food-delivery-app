@@ -16,7 +16,7 @@ import mushroomSwiss from "../../assets/Mushroom Swiss Burger.jpeg";
 import pepperoniPizza from "../../assets/pepperonipizza.jpeg";
 import fajitaPizza from "../../assets/fajita pizza.jpg";
 import afghaniPizza from "../../assets/Afghanipizza.jpg";
-import hawaiianPizza from "../../assets/Hawaiian pizza.avif";
+import hawaiianPizza from "../../assets/Hawaiian Pizza.avif";
 import mexicanPizza from "../../assets/Mexican pizza.webp";
 
 // 🥗 Salads
