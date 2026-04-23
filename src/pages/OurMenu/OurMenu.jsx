@@ -5,25 +5,25 @@ import "../../styles/Menu.css";
 import { CartContext } from "../../Context/CartContext";
 
 // 🍔 Burgers
-import doubleBurger from "../../assets/double burger.webp";
-import chickenBurger from "../../assets/chicken burger.jpg";
-import bbqBurger from "../../assets/bbq burger.jpg";
+import doubleBurger from "../../assets/double-burger.webp";
+import chickenBurger from "../../assets/chicken-burger.jpg";
+import bbqBurger from "../../assets/bbq-burger.jpg";
 import smashBurger from "../../assets/smash.jpg";
-import fishBurger from "../../assets/fish burger.jpg";
-import mushroomSwiss from "../../assets/Mushroom Swiss Burger.jpeg";
+import fishBurger from "../../assets/fish-burger.jpg";
+import mushroomSwiss from "../../assets/Mushroom-Swiss-Burger.jpeg";
 
 // 🍕 Pizzas
 import pepperoniPizza from "../../assets/pepperonipizza.jpeg";
-import fajitaPizza from "../../assets/fajita pizza.jpg";
+import fajitaPizza from "../../assets/fajita-pizza.jpg";
 import afghaniPizza from "../../assets/Afghanipizza.jpg";
-import hawaiianPizza from "../../assets/Hawaiian Pizza.avif";
-import mexicanPizza from "../../assets/Mexican pizza.webp";
+import hawaiianPizza from "../../assets/Hawaiian-Pizza.avif";
+import mexicanPizza from "../../assets/mexican-pizza.webp";
 
 // 🥗 Salads
-import caesarSalad from "../../assets/Caesar Salad.jpg";
-import greekSalad from "../../assets/Greek Salad.jpg";
-import chickenSalad from "../../assets/chicken salad.jpg";
-import fruitSalad from "../../assets/Fruit Salad.webp";
+import caesarSalad from "../../assets/Caesar-Salad.jpg";
+import greekSalad from "../../assets/Greek-Salad.jpg";
+import chickenSalad from "../../assets/chicken-salad.jpg";
+import fruitSalad from "../../assets/Fruit-Salad.webp";
 
 function OurMenu() {
   const { addToCart } = useContext(CartContext);
