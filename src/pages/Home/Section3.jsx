@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image1 from "../../assets/zinger.jpg";
 import Image2 from "../../assets/smash.jpg";
 import Image3 from "../../assets/pizza.jpg";
-import Image4 from "../../assets/chicken salad.jpg";
-import Image5 from "../../assets/fajita pizza.jpg";
-import Image6 from "../../assets/double burger.webp";
-import Image7 from "../../assets/Caesar Salad.jpg";
-import Image8 from "../../assets/mexican pizza.webp";
+import Image4 from "../../assets/chicken-salad.jpg";
+import Image5 from "../../assets/fajita-pizza.jpg";
+import Image6 from "../../assets/double-burger.webp";
+import Image7 from "../../assets/Caesar-Salad.jpg";
+import Image8 from "../../assets/mexican-pizza.webp";
 import Cards from "../../components/Card.jsx";
 import { Link } from "react-router-dom";
 
